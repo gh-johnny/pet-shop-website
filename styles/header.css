@@ -1,0 +1,32 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 2.5rem 0 2.5rem;
+}
+
+h1 {
+    font-size: 25px;
+    letter-spacing: 7.5px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+
+    letter-spacing: 3.2px;
+}
+
+nav ul{
+    display: flex;
+    column-gap: 1.5rem;
+}
+
+nav section {
+    display: flex;
+    column-gap: 1.25rem;
+}
+
+nav img {
+    object-fit: contain;
+}
