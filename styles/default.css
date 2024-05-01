@@ -266,11 +266,13 @@ Remove the inner padding in Chrome and Safari on macOS.
 }
 
 /*
-Add the correct display in Chrome and Safari.
+1. Add the correct display in Chrome and Safari.
+2. Removes the default arrow
 */
 
 summary {
-  display: list-item;
+  display: list-item; /* 1 */
+  list-style-type: none; /* 2 */
 }
 
 /*
