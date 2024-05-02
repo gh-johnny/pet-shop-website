@@ -46,3 +46,66 @@
     letter-spacing: 4px;
     white-space: nowrap;
 }
+
+.slideshow-container {
+    border: 1px solid black;
+    width: 700px;
+    position: relative;
+    margin: auto;
+}
+
+.slideshow-container figcaption {
+    color: #f2f2f2;
+    font-size: 12px;
+
+    padding: 8px 12px;
+
+    position: absolute;
+    top: 0;
+}
+
+.slideshow-container > section {
+    text-align: center;
+}
+
+.slides {
+    display: none;
+}
+
+.slides img {
+    width: 100%;
+}
+
+.dot {
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 600ms ease-out;
+}
+
+.active {
+    background: #717171;
+}
+
+.dot:hover {
+    background: #515151;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

@@ -16,6 +16,9 @@
 
     <link rel="icon" type="image/x-icon" href="assets/favicon.png"></link>
 
+    <script src="scripts/hamburger-outside-click.js" defer></script>
+    <script src="scripts/slider.js" defer></script>
+
     <title>Made for Pets</title>
 </head>
 <body>
@@ -34,7 +37,7 @@
             </section>
             <figure>
             <figure>
-                <details>
+                <details class="hamburger">
                     <summary><div class="hamburger-icon"></div></summary>
                     <div class="hamburger-content">
                         <ul>
@@ -65,11 +68,27 @@
                 </article>
             </figure>
            
-            <section class="slider">
+            <section class="slideshow-container">
+                <figure class="slides fade">
+                    <figcaption>1 / 3</figcaption>
+                    <img alt="Dog with bowl" src="assets/dog-banner-bowl.png"/>
+                </figure>
+                <figure class="slides fade">
+                    <figcaption>2 / 3</figcaption>
+                    <img alt="Cat" src="assets/cat-banner.png"/>
+                </figure>
+                <figure class="slides fade">
+                    <figcaption>3 / 3</figcaption>
+                    <img alt="Dog with toy" src="assets/dog-banner-toy.png"/>
+                </figure>
+
+                <section>
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </section>
             </section>
         </section>
     </main>
-
-
 </body>
 </html>
