@@ -1,10 +1,13 @@
 .home {
     display: flex;
+    justify-content: center;
+    column-gap: 15vw;
     padding: 4rem 8rem 4rem 8rem;
 }
 
 .heart-logo {
     position: relative;
+    height: min-content;
 }
 
 .heart-logo img {
@@ -48,24 +51,23 @@
 }
 
 .slideshow-container {
-    border: 1px solid black;
-    width: 700px;
+    width: 12rem;
+    height: 22rem;
     position: relative;
-    margin: auto;
-}
-
-.slideshow-container figcaption {
-    color: #f2f2f2;
-    font-size: 12px;
-
-    padding: 8px 12px;
-
-    position: absolute;
-    top: 0;
 }
 
 .slideshow-container > section {
-    text-align: center;
+    position: absolute;
+}
+
+.slideshow-container > section > section {
+    position: absolute;
+    bottom: -2rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    column-gap: .5rem;
 }
 
 .slides {
@@ -73,7 +75,10 @@
 }
 
 .slides img {
-    width: 100%;
+    border-radius: 10px;
+    width: 12rem;
+    height: 22rem;
+    object-fit: contain;
 }
 
 .dot {

@@ -25,7 +25,7 @@ const showSlides = (n) => {
 
     if (animationFlag) {
         slideIndex < 3 ? slideIndex++ : slideIndex = 1
-        return new Promise((resolve) => setTimeout(resolve, 2000)).then((_) => showSlides(slideIndex))
+        return new Promise((resolve) => setTimeout(resolve, 4000)).then((_) => showSlides(slideIndex))
     }
 }
 
