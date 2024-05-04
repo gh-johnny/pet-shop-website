@@ -1,25 +1,25 @@
 .catalog {
-    padding: 3rem;
+    padding-inline: 3rem;
     display: flex;
     flex-direction: column;
 }
 
 .catalog > section {
-    display: flex;
-    flex-wrap: wrap;
-    row-gap: 3rem;
-    justify-content: space-between;
-    padding: 2rem 14rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    margin: 1rem auto 0;
 }
 
 .catalog h2 {
+    padding-top: 3rem;
     font-size: 25px;
     letter-spacing: 5px;
     font-weight: 600;
 }
 
 .card {
-    width: 17vw;
+    width: 20vw;
     box-shadow: 0 0 10px #131313;
     border-radius: 10px;
     overflow: hidden;
@@ -78,3 +78,21 @@
     background-image: linear-gradient(to top, rgba(73, 119, 229, .20), transparent);
 }
  
+.adopt {
+    text-transform: capitalize;
+    color: white;
+    background-color: #10b981;
+    padding: .6vw 1.25vw;
+    border-radius: 6px;
+    box-shadow: 0 0 5px gray;
+    justify-self: end;
+}
+
+.adopt:hover {
+    opacity: .8;
+}
+
+.ask {
+    color: black;
+    background-color: gainsboro;
+}
