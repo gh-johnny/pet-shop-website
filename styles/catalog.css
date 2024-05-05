@@ -88,3 +88,16 @@
 .card figcaption > section > span {
     white-space: nowrap;
 }
+
+@media (max-height: 1023px){
+    #catalog > section:nth-child(2){
+        width: 80vw;
+        overflow-x: auto;
+        padding: 1rem;
+        max-width: 730px;
+    }
+
+    .catalog .card {
+        width: 200px;
+    }
+}
