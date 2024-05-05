@@ -23,6 +23,7 @@
     border-radius: 6px 6px 0px 0px;
     text-transform: capitalize;
     cursor: pointer;
+    width: 40vw;
 }
 
 .about li > * {
@@ -30,7 +31,7 @@
 }
 
 .about li {
-    width: 35vw;
+    width: 40vw;
     position: relative;
     isolation: isolate;
 }
@@ -47,6 +48,10 @@
     opacity: 0;
     translate: 0 -10%;
     transition: all 200ms ease;
+
+    height: 15rem;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .about input[type="checkbox"]:checked ~ section {
@@ -89,19 +94,22 @@
     margin-left: 30rem;
 }
 
-.about li:nth-child(1) input[type="checkbox"]:checked + label{
-    margin-bottom: 13rem;
-}
-
-.about li:nth-child(2) input[type="checkbox"]:checked + label{
-    margin-bottom: 11rem;
-}
-
-.about li:nth-child(3) input[type="checkbox"]:checked + label{
+.about li input[type="checkbox"]:checked + label{
     margin-bottom: 16rem;
 }
 
-.about li:nth-child(4) input[type="checkbox"]:checked + label{
-    margin-bottom: 12rem;
-}
+@media (max-width: 1023px) {
+    .about li:nth-child(1) {
+        margin-left: 30rem;
+    }
+    .about li:nth-child(2) {
+        margin-left: 10rem;
+    }
+    .about li:nth-child(3) {
+        margin-right: 10rem;
+    }
+    .about li:nth-child(4) {
+        margin-right: 30rem;
+    }
 
+}
