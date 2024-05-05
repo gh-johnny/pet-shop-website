@@ -5,6 +5,9 @@ html,
   font-weight: 500;
   font-style: normal;
   scroll-behavior: smooth;
+
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 body {

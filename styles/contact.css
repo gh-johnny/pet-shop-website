@@ -94,3 +94,13 @@
 .contact button[type="submit"]:hover {
     opacity: .8;
 }
+
+@media (max-width: 1023px){
+    .contact > section {
+        flex-direction: column;
+    }
+
+    .contact span {
+        /* text-align: start; */
+    }
+}
