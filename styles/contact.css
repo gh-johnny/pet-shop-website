@@ -1,5 +1,68 @@
+:root{
+    --color-brown: #3D2F26;
+}
+
 .contact {
     padding-inline: 3rem;
     display: flex;
     flex-direction: column;
 }
+
+.contact > section {
+    color: white;
+    background-color: var(--color-brown);
+    border-radius: 10px;
+    display: flex;
+    margin-inline: auto;
+    padding: 3rem;
+}
+
+.contact img {
+    border-radius: 50%;
+    position: relative;
+    translate: 30%;
+}
+
+.contact figure {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.contact figcaption {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contact figure > div {
+    border: 2px solid white;
+    width: fit-content;
+    border-radius: 50%;
+    position: relative;
+}
+
+.contact figure > div::after {
+    content: '';
+    position: absolute;
+    top: 0;
+
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    translate: 30%;
+    background-image: linear-gradient(to top, rgba(73, 119, 229, .20), transparent);
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact form input,
+.contact form textarea {
+    color: white;
+    background-color: transparent;
+}
+
+
