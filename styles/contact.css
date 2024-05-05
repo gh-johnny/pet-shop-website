@@ -1,0 +1,5 @@
+.contact {
+    padding-inline: 3rem;
+    display: flex;
+    flex-direction: column;
+}
