@@ -4,6 +4,7 @@ html,
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -11,3 +12,11 @@ body {
     background-repeat: no-repeat;
     color: #131313;
 }
+
+h2 {
+    padding-top: 3rem;
+    font-size: 25px;
+    letter-spacing: 5px;
+    font-weight: 600;
+}
+

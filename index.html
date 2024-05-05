@@ -12,15 +12,23 @@
     <link rel="stylesheet" href="styles/default.css"></link>
     <link rel="stylesheet" href="styles/global.css"></link>
     <link rel="stylesheet" href="styles/header.css"></link>
+    <link rel="stylesheet" href="styles/home.css"></link>
+    <link rel="stylesheet" href="styles/catalog.css"></link>
+    <link rel="stylesheet" href="styles/about.css"></link>
+    <link rel="stylesheet" href="styles/contact.css"></link>
+    <link rel="stylesheet" href="styles/footer.css"></link>
 
     <link rel="icon" type="image/x-icon" href="assets/favicon.png"></link>
+
+    <script src="scripts/hamburger-outside-click.js" defer></script>
+    <script src="scripts/slider.js" defer></script>
 
     <title>Made for Pets</title>
 </head>
 <body>
     <header>
         <h1>Made for Pets</h1>
-        <nav>
+        <nav class="container-nav">
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#catalog">Catalog</a></li>
@@ -28,16 +36,386 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <section>
-                <button type="button"><img src="assets/user-icon.png"/></button>
-               <button type="button"><img src="assets/shopping-cart-icon.png"/></button>
+                <button type="button"><img alt="user icon" src="assets/user-icon.png"/></button>
+                <button type="button"><img alt="shopping cart icon" src="assets/shopping-cart-icon.png"/></button>
             </section>
-            <details>
-                <summary><img src="assets/hamburger-menu.png"/></summary>
-
-            </details>
+            <figure>
+            <figure>
+                <details class="hamburger">
+                    <summary><div class="hamburger-icon"></div></summary>
+                    <div class="hamburger-content">
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#catalog">Catalog</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                        <section>
+                            <button type="button"><img src="assets/user-icon.png"/></button>
+                            <button type="button"><img src="assets/shopping-cart-icon.png"/></button>
+                        </section>
+                    </div>
+                </details>
+            </figure>
         </nav>
     </header>
+    <main>
+        <section class="home">
+            <figure class="heart-logo">
+                <img alt="The outline of a heart with a paw inside" src="assets/heart-paw-logo.png"/>
+                <article>
+                    <p>
+                        <span>made with love</span>
+                        <span>for pets</span>
+                    </p>
+                    <a href="#catalog">Shop now</a>
+                </article>
+            </figure>
+           
+            <div class="slideshow-container">
+                <section>
+                    <figure class="slides fade">
+                        <img alt="Dog with bowl" src="assets/dog-banner-bowl.png"/>
+                    </figure>
+                    <figure class="slides fade">
+                        <img alt="Cat" src="assets/cat-banner.png"/>
+                    </figure>
+                    <figure class="slides fade">
+                        <img alt="Dog with toy" src="assets/dog-banner-toy.png"/>
+                    </figure>
 
+                    <section>
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </section>
+                </section>
+            </div>
+        </section>
 
+        <section id="catalog" class="catalog">
+            <h2>Products</h2>
+            <section>
+                <figure class="card">
+                    <div>
+                        <img alt="product" src="assets/rubber-duck.jpeg"/>
+                        <div class="filter"></div>
+                    </div>
+                    <figcaption>
+                        <h3>ruber duck</h3>
+                        <section>
+                            <p class="item-counter">
+                                <button type="button">-</button>
+                                <span>1</span>
+                                <button type="button">+</button>
+                            </p>
+                            <span>$150</span>
+                        </section>
+                    </figcaption>
+                </figure>
+                <figure class="card">
+                    <div>
+                        <img alt="product" src="assets/ear-cleaner-with-hand.jpeg"/>
+                        <div class="filter"></div>
+                    </div>
+                    <figcaption>
+                        <h3>ear cleaner</h3>
+                        <section>
+                            <p class="item-counter">
+                                <button type="button">-</button>
+                                <span>1</span>
+                                <button type="button">+</button>
+                            </p>
+                            <span>$150</span>
+                        </section>
+                    </figcaption>
+                </figure>
+                <figure class="card">
+                    <div>
+                        <img alt="product" src="assets/bathrobe-dog.jpeg"/>
+                        <div class="filter"></div>
+                    </div>
+                    <figcaption>
+                        <h3>bathrobe</h3>
+                        <section>
+                            <p class="item-counter">
+                                <button type="button">-</button>
+                                <span>1</span>
+                                <button type="button">+</button>
+                            </p>
+                            <span>$150</span>
+                        </section>
+                    </figcaption>
+                </figure>
+            </section>
+        </section>
+
+        <section id="pets" class="catalog">
+            <h2>Pets to Adopt</h2>
+            <section>
+                <figure class="card">
+                    <div>
+                        <img alt="product" src="assets/hamster1.jpeg"/>
+                        <div class="filter"></div>
+                    </div>
+                    <figcaption>
+                        <h3>Geforce</h3>
+                        <section>
+                            <span>Age: 1</span>
+                            <a 
+                                href="#contact"
+                                class="adopt"
+                                >
+                                adopt!
+                            </a>
+                        </section>
+                    </figcaption>
+                </figure>
+                <figure class="card">
+                    <div>
+                        <img alt="product" src="assets/bird.jpeg"/>
+                        <div class="filter"></div>
+                    </div>
+                    <figcaption>
+                        <h3>Gray</h3>
+                        <section>
+                            <span>Age: 4</span>
+                            <a 
+                                href="#contact"
+                                class="adopt"
+                                >
+                                adopt!
+                            </a>
+                        </section>
+                    </figcaption>
+                </figure>
+                <figure class="card">
+                    <div>
+                        <img alt="product" src="assets/penguin.jpeg"/>
+                        <div class="filter"></div>
+                    </div>
+                    <figcaption>
+                        <h3>Linux (Tux)</h3>
+                        <section>
+                            <span>Age: 3</span>
+                            <a 
+                                href="#contact"
+                                class="adopt"
+                            >
+                            adopt!
+                            </a>
+                        </section>
+                    </figcaption>
+                </figure>
+                <figure class="card">
+                    <div>
+                        <img alt="product" src="assets/cat1.jpeg"/>
+                        <div class="filter"></div>
+                    </div>
+                    <figcaption>
+                        <h3>Not Garfield</h3>
+                        <section>
+                            <span>Age: 9</span>
+                            <a 
+                                href="#contact"
+                                class="adopt"
+                            >
+                            adopt!
+                            </a>
+                        </section>
+                    </figcaption>
+                </figure>
+                <figure class="card">
+                    <div>
+                        <img alt="product" src="assets/dog2.jpeg"/>
+                        <div class="filter"></div>
+                    </div>
+                    <figcaption>
+                        <h3>Papelão</h3>
+                        <section>
+                            <span>Age: 3</span>
+                            <a 
+                                href="#contact"
+                                class="adopt"
+                            >
+                            adopt!
+                            </a>
+                        </section>
+                    </figcaption>
+                </figure>
+                <figure class="card">
+                    <div>
+                        <img alt="product" src="assets/hedgehog.jpeg"/>
+                        <div class="filter"></div>
+                    </div>
+                    <figcaption>
+                        <h3>Sonic</h3>
+                        <section>
+                            <span>Age: 1</span>
+                            <a 
+                                href="#contact"
+                                class="adopt"
+                            >
+                            adopt!
+                            </a>
+                        </section>
+                    </figcaption>
+                </figure>
+                <figure class="card">
+                    <div>
+                        <img alt="product" src="assets/dog1.jpeg"/>
+                        <div class="filter"></div>
+                    </div>
+                    <figcaption>
+                        <h3>Robson</h3>
+                        <section>
+                            <span>Age: 2</span>
+                            <a 
+                                href="#contact"
+                                class="adopt"
+                            >
+                            adopt!
+                            </a>
+                        </section>
+                    </figcaption>
+                </figure>
+                <figure class="card">
+                    <div>
+                        <img alt="product" src="assets/dog-layed.jpeg"/>
+                        <div class="filter"></div>
+                    </div>
+                    <figcaption>
+                        <h3>Cotsco</h3>
+                        <section>
+                            <span>Age: 2</span>
+                            <a 
+                                href="#contact"
+                                class="adopt"
+                            >
+                            adopt!
+                            </a>
+                        </section>
+                    </figcaption>
+                </figure>
+                <figure class="card">
+                    <div>
+                        <img alt="product" src="assets/cat-orange.jpeg"/>
+                        <div class="filter"></div>
+                    </div>
+                    <figcaption>
+                        <h3>Introvert</h3>
+                        <section>
+                            <span>Age: 4</span>
+                            <a 
+                                href="#contact"
+                                class="adopt"
+                            >
+                            adopt!
+                            </a>
+                        </section>
+                    </figcaption>
+                </figure>
+            </section>
+        </section>
+
+        <section id="#about" class="about">
+            <h2>About</h2>
+            <section>
+                <ul>
+                    <li>
+                        <input id="checkbox-1" type="checkbox"/>
+                        <label for="checkbox-1">
+                            <img 
+                                src="assets/paw-icon.png" 
+                                alt="paw icon"
+                                class="about-icon"
+                            />
+                            <span>individual approach to each pet</span>
+                        </label>
+                        <section>
+                            <p>
+                                We know each pet is special, with their own personality and needs. That's why we offer individualized attention and care to all our furry (or feathery or scaled) friends. Our knowledgeable staff is here to help you find the perfect food, toys, and accessories for your one-of-a-kind companion!
+                            </p>
+                        </section>
+                    </li>
+                    <li>
+                        <input id="checkbox-2" type="checkbox"/>
+                        <label for="checkbox-2">
+                            <img 
+                                src="assets/world-icon.png" 
+                                alt="world icon"
+                                class="about-icon"
+                            />
+                            <span>international shipping</span>
+                        </label>
+                        <section>
+                            <p>
+                                Moving abroad with your furry friend? We can help! We partner with trusted pet relocation services to ensure your pet's safe and comfortable international travel.
+                            </p>
+                        </section>
+                    </li>
+                    <li>
+                        <input id="checkbox-4" type="checkbox"/>
+                        <label for="checkbox-4">
+                            <img 
+                                src="assets/store-icon.png" 
+                                alt="store icon"
+                                class="about-icon"
+                            />
+                            <span>more than 50 stores worldwide</span>
+                        </label>
+                        <section>
+                            <p>
+                                We're more than just a pet shop – we're a global family dedicated to bringing happiness to pets and their people around the world!  With over 50 locations spanning the globe, you can experience our commitment to quality pet care wherever you call home.  Our knowledgeable staff and wide selection of pet supplies ensure you have everything you need to keep your furry friend healthy, happy, and ready for tail-wagging adventures!
+                            </p>
+                        </section>
+                    </li>
+                    <li>
+                        <input id="checkbox-3" type="checkbox"/>
+                        <label for="checkbox-3">
+                            <img 
+                                src="assets/store-icon.png" 
+                                alt="store icon"
+                                class="about-icon"
+                            />
+                            <span>more than 50 stores worldwide</span>
+                        </label>
+                        <section>
+                            <p>
+                                We're more than just a pet shop – we're a global family dedicated to bringing happiness to pets and their people around the world!  With over 50 locations spanning the globe, you can experience our commitment to quality pet care wherever you call home.  Our knowledgeable staff and wide selection of pet supplies ensure you have everything you need to keep your furry friend healthy, happy, and ready for tail-wagging adventures!
+                            </p>
+                        </section>
+                    </li>
+                </ul>
+            </section>
+        </section>
+        <section id="contact" class="contact">
+            <h2>Contact</h2>
+            <section>
+                <figure>
+                    <div><img src="assets/contact-dogs.png" alt="dogs"/></div>
+                    <figcaption>
+                        <span>Get in touch with our team.</span>
+                        <span>Advices, questions, Concerns</span>
+                        <span>We are here to help!</span>
+                    </figcaption>
+                </figure>
+                <form action=''>
+                    <input placeholder="email"/>
+                    <textarea placeholder="message"></textarea>
+                    <button type="button">send</button>
+                </form>
+            </section>
+        </section>
+
+        <footer>
+            <section>
+            </section>
+            <section>
+                &copy;2024; Made for Pets, All Rights Reserved 
+            </section>
+        </footer>
+
+    </main>
 </body>
 </html>

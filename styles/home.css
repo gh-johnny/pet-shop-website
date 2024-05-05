@@ -1,0 +1,116 @@
+.home {
+    display: flex;
+    justify-content: center;
+    column-gap: 15vw;
+    padding: 4rem 8rem 4rem 8rem;
+}
+
+.heart-logo {
+    position: relative;
+    height: min-content;
+}
+
+.heart-logo img {
+    width: 20rem;
+}
+
+.heart-logo article {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.heart-logo p {
+    letter-spacing: 6.4px;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.4em;
+    text-align: center;
+}
+
+.heart-logo p span {
+    white-space: nowrap;
+}
+
+.heart-logo a {
+    position: absolute;
+    top: 125%;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    color: white;
+    background-color: #3D2F26;
+
+    padding: .75rem 1.5rem;
+
+    border-radius: 6px;
+    letter-spacing: 4px;
+    white-space: nowrap;
+}
+
+.slideshow-container {
+    width: 12rem;
+    height: 22rem;
+    position: relative;
+}
+
+.slideshow-container > section {
+    position: absolute;
+}
+
+.slideshow-container > section > section {
+    position: absolute;
+    bottom: -2rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    column-gap: .5rem;
+}
+
+.slides {
+    display: none;
+}
+
+.slides img {
+    border-radius: 10px;
+    width: 12rem;
+    height: 22rem;
+    object-fit: contain;
+}
+
+.dot {
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 600ms ease-out;
+}
+
+.active {
+    background: #717171;
+}
+
+.dot:hover {
+    background: #515151;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
