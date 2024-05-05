@@ -1,0 +1,106 @@
+.about {
+    padding-inline: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.about ul {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about input {
+    display: none;
+}
+
+.about label {
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+    white-space: nowrap;
+    border-radius: 6px 6px 0px 0px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.about li > * {
+    padding: 1rem 3rem;
+}
+
+.about li {
+    width: 35vw;
+    position: relative;
+    isolation: isolate;
+}
+
+.about li > section {
+    position: absolute;
+    top: 4.3rem;
+    z-index: -1;
+
+    padding: 2rem;
+    background-color: white;
+    border-radius: 0px 0px 6px 6px;
+
+    opacity: 0;
+    translate: 0 -10%;
+    transition: all 200ms ease;
+}
+
+.about input[type="checkbox"]:checked ~ section {
+    opacity: 1;
+}
+
+.about input[type="checkbox"] + label{
+    box-sizing: border-box;
+    margin-bottom: 0;
+    transition: margin .200s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.about input[type="checkbox"]:checked + label{
+    background-color: lightgray;
+}
+
+.about li:nth-child(1) input[type="checkbox"]:checked + label{
+    margin-bottom: 13rem;
+}
+
+.about li:nth-child(2) input[type="checkbox"]:checked + label{
+    margin-bottom: 12rem;
+}
+
+.about li:nth-child(3) input[type="checkbox"]:checked + label{
+    margin-bottom: 12rem;
+}
+
+.about li:nth-child(4) input[type="checkbox"]:checked + label{
+    margin-bottom: 12rem;
+}
+
+.about label:hover {
+    background: lightgrey;
+    cursor: pointer;
+}
+
+.about-icon {
+    width: 32px;
+    aspect-ratio: 1;
+}
+
+.about li:nth-child(1) {
+    margin-right: 30rem;
+}
+
+.about li:nth-child(2) {
+    margin-right: 10rem;
+}
+
+.about li:nth-child(3) {
+    margin-left: 10rem;
+}
+
+.about li:nth-child(4) {
+    margin-left: 30rem;
+}

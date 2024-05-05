@@ -11,13 +11,6 @@
     margin: 1rem auto 0;
 }
 
-.catalog h2 {
-    padding-top: 3rem;
-    font-size: 25px;
-    letter-spacing: 5px;
-    font-weight: 600;
-}
-
 .card {
     width: 20vw;
     box-shadow: 0 0 10px #131313;
@@ -92,7 +85,6 @@
     opacity: .8;
 }
 
-.ask {
-    color: black;
-    background-color: gainsboro;
+.card figcaption > section > span {
+    white-space: nowrap;
 }
