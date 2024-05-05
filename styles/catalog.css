@@ -89,15 +89,19 @@
     white-space: nowrap;
 }
 
-@media (max-height: 1023px){
+@media (max-width: 1023px){
     #catalog > section:nth-child(2){
         width: 80vw;
         overflow-x: auto;
         padding: 1rem;
-        max-width: 730px;
+        padding: 15px;
     }
 
     .catalog .card {
         width: 200px;
+    }
+
+    .pets > section:nth-child(2) {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
