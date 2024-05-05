@@ -114,3 +114,16 @@
         opacity: 1;
     }
 }
+
+nav a,
+nav img {
+    padding: .2rem;
+    border-radius: 3px;
+}
+
+nav a:hover,
+nav img:hover {
+    box-shadow: 0 0 0 2px #131313;
+    opacity: .9;
+}
+
