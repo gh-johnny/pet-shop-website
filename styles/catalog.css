@@ -71,7 +71,7 @@
     background-image: linear-gradient(to top, rgba(73, 119, 229, .20), transparent);
 }
  
-.adopt {
+.adopt-btn {
     text-transform: capitalize;
     color: white;
     background-color: #10b981;
@@ -81,7 +81,7 @@
     justify-self: end;
 }
 
-.adopt:hover {
+.adopt-btn:hover {
     opacity: .8;
 }
 
