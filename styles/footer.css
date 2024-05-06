@@ -67,12 +67,28 @@ footer > section:nth-child(2) {
 }
 
 @media (max-width: 1023px){
-    
     footer > section:nth-child(1) {
         flex-direction: column;
+        row-gap: 3rem;
+    }
+
+    footer ul {
+        row-gap: 3rem;
+        font-size: 14px;
     }
 
     footer > section > ul:nth-child(4) > li {
         text-transform: lowercase;
+    }
+
+    footer h3 {
+        padding-top: 1rem;
+        font-weight: 600;
+        translate: 0;
+    } 
+
+
+    footer > section:nth-child(2) {
+        font-size: 12px;
     }
 }
