@@ -17,7 +17,7 @@
     </li>
 </ul>
 
-<div style="display: flex; flex-direction: column;">
+<div style="display: flex; flex-direction: column; align-items: center;">
     <img 
         src="https://raw.githubusercontent.com/gh-johnny/pet-shop-website/main/docs/assets/website-printscreen.png" 
         alt="Printscreen do projeto"
