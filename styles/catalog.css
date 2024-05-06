@@ -71,7 +71,7 @@
     background-image: linear-gradient(to top, rgba(73, 119, 229, .20), transparent);
 }
  
-.adopt {
+.adopt-btn {
     text-transform: capitalize;
     color: white;
     background-color: #10b981;
@@ -81,10 +81,37 @@
     justify-self: end;
 }
 
-.adopt:hover {
+.adopt-btn:hover {
     opacity: .8;
 }
 
 .card figcaption > section > span {
     white-space: nowrap;
+}
+
+@media (max-width: 1023px){
+    .catalog {
+        padding: 0;
+    }
+
+    #catalog > section:nth-child(2){
+        width: 80vw;
+        overflow-x: auto;
+    }
+
+    .catalog h2 {
+        padding: 2rem 2rem 1rem;
+    }
+
+    .catalog .card {
+        width: 200px;
+    }
+
+    .products > section:nth-child(2) {
+        padding: 1rem;
+    }
+
+    .pets > section:nth-child(2) {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }

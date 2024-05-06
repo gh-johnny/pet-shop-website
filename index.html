@@ -60,7 +60,7 @@
         </nav>
     </header>
     <main>
-        <section class="home">
+        <section id="home" class="home">
             <figure class="heart-logo">
                 <img alt="The outline of a heart with a paw inside" src="assets/heart-paw-logo.png"/>
                 <article>
@@ -93,7 +93,7 @@
             </div>
         </section>
 
-        <section id="catalog" class="catalog">
+        <section id="catalog" class="catalog products">
             <h2>Products</h2>
             <section>
                 <figure class="card">
@@ -109,7 +109,7 @@
                                 <span>1</span>
                                 <button type="button">+</button>
                             </p>
-                            <span>$150</span>
+                            <span>$49,99</span>
                         </section>
                     </figcaption>
                 </figure>
@@ -126,7 +126,7 @@
                                 <span>1</span>
                                 <button type="button">+</button>
                             </p>
-                            <span>$150</span>
+                            <span>$74,95</span>
                         </section>
                     </figcaption>
                 </figure>
@@ -143,14 +143,14 @@
                                 <span>1</span>
                                 <button type="button">+</button>
                             </p>
-                            <span>$150</span>
+                            <span>$89,90</span>
                         </section>
                     </figcaption>
                 </figure>
             </section>
         </section>
 
-        <section id="pets" class="catalog">
+        <section id="pets" class="catalog pets">
             <h2>Pets to Adopt</h2>
             <section>
                 <figure class="card">
@@ -164,7 +164,7 @@
                             <span>Age: 1</span>
                             <a 
                                 href="#contact"
-                                class="adopt"
+                                class="adopt-btn"
                                 >
                                 adopt!
                             </a>
@@ -182,7 +182,7 @@
                             <span>Age: 4</span>
                             <a 
                                 href="#contact"
-                                class="adopt"
+                                class="adopt-btn"
                                 >
                                 adopt!
                             </a>
@@ -200,7 +200,7 @@
                             <span>Age: 3</span>
                             <a 
                                 href="#contact"
-                                class="adopt"
+                                class="adopt-btn"
                             >
                             adopt!
                             </a>
@@ -218,7 +218,7 @@
                             <span>Age: 9</span>
                             <a 
                                 href="#contact"
-                                class="adopt"
+                                class="adopt-btn"
                             >
                             adopt!
                             </a>
@@ -236,7 +236,7 @@
                             <span>Age: 3</span>
                             <a 
                                 href="#contact"
-                                class="adopt"
+                                class="adopt-btn"
                             >
                             adopt!
                             </a>
@@ -254,7 +254,7 @@
                             <span>Age: 1</span>
                             <a 
                                 href="#contact"
-                                class="adopt"
+                                class="adopt-btn"
                             >
                             adopt!
                             </a>
@@ -272,7 +272,7 @@
                             <span>Age: 2</span>
                             <a 
                                 href="#contact"
-                                class="adopt"
+                                class="adopt-btn"
                             >
                             adopt!
                             </a>
@@ -290,7 +290,7 @@
                             <span>Age: 2</span>
                             <a 
                                 href="#contact"
-                                class="adopt"
+                                class="adopt-btn"
                             >
                             adopt!
                             </a>
@@ -308,7 +308,7 @@
                             <span>Age: 4</span>
                             <a 
                                 href="#contact"
-                                class="adopt"
+                                class="adopt-btn"
                             >
                             adopt!
                             </a>
@@ -318,12 +318,12 @@
             </section>
         </section>
 
-        <section id="#about" class="about">
+        <section id="about" class="about">
             <h2>About</h2>
             <section>
                 <ul>
                     <li>
-                        <input id="checkbox-1" type="checkbox"/>
+                        <input id="checkbox-1" type="checkbox" checked/>
                         <label for="checkbox-1">
                             <img 
                                 src="assets/paw-icon.png" 
@@ -350,7 +350,7 @@
                         </label>
                         <section>
                             <p>
-                                Moving abroad with your furry friend? We can help! We partner with trusted pet relocation services to ensure your pet's safe and comfortable international travel.
+                                Moving abroad with your furry friend? We can help! We partner with trusted pet relocation services to ensure your pet's safe and comfortable international travel. Pets are our concern and it is our jobs as providers and experts to take care of them. Some of our furry friends cannot travel for safety reasons, if you have any questions please make sure to contact us.
                             </p>
                         </section>
                     </li>
@@ -374,21 +374,22 @@
                         <input id="checkbox-3" type="checkbox"/>
                         <label for="checkbox-3">
                             <img 
-                                src="assets/store-icon.png" 
+                                src="assets/people-icon.png" 
                                 alt="store icon"
                                 class="about-icon"
                             />
-                            <span>more than 50 stores worldwide</span>
+                            <span>over 20,000 satisfied customers</span>
                         </label>
                         <section>
                             <p>
-                                We're more than just a pet shop – we're a global family dedicated to bringing happiness to pets and their people around the world!  With over 50 locations spanning the globe, you can experience our commitment to quality pet care wherever you call home.  Our knowledgeable staff and wide selection of pet supplies ensure you have everything you need to keep your furry friend healthy, happy, and ready for tail-wagging adventures!
+                                We're more than just a pet shop – we're a global family dedicated to bringing happiness to pets and their people around the world!  With over 50 locations spanning the globe and over 20,000 satisfied customers, we're a growing community passionate about pet well-being.  No matter where you call home, you can experience our commitment to quality pet care.  Our knowledgeable staff and wide selection of pet supplies ensure you have everything you need to keep your furry friend healthy, happy, and ready for tail-wagging adventures!
                             </p>
                         </section>
                     </li>
                 </ul>
             </section>
         </section>
+
         <section id="contact" class="contact">
             <h2>Contact</h2>
             <section>
@@ -403,19 +404,50 @@
                 <form action=''>
                     <input placeholder="email"/>
                     <textarea placeholder="message"></textarea>
-                    <button type="button">send</button>
+                    <button type="submit">send</button>
                 </form>
             </section>
         </section>
 
         <footer>
             <section>
+                <figure>
+                    <img 
+                        src="assets/heart-paw-logo.png"
+                        alt="The outline of a heart with a paw inside" 
+                    />
+                </figure>
+                <ul>
+                    <li>
+                        <a href="#home">home</a>
+                    </li>
+                    <li>
+                        <a href="#about">about us</a>
+                    </li>
+                    <li>
+                        <a href="#catalog">catalog</a>
+                    </li>
+                    <li>
+                        <a href="#contact">contact</a>
+                    </li>
+                </ul>
+                <h3>Follow us</h3>
+                <ul>
+                    <li>
+                        <img src="assets/instagram-icon.png" alt="instagram icon"/><a href="#">@made_for_pets</a>
+                    </li>
+                    <li>
+                        <img src="assets/email-icon.png" alt="email icon"/><a href="#">madeforpets@gmail.com</a>
+                    </li>
+                    <li>
+                        <img src="assets/facebook-icon.png" alt="facebook icon"/><a href="#">made 4 pets</a>
+                    </li>
+                </ul>
             </section>
             <section>
-                &copy;2024; Made for Pets, All Rights Reserved 
+                &copy;2024; Made for Pets, All Rights Reserved.
             </section>
         </footer>
-
     </main>
 </body>
 </html>

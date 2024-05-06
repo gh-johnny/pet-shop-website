@@ -7,7 +7,7 @@
 
 .heart-logo {
     position: relative;
-    height: min-content;
+    height: fit-content;
 }
 
 .heart-logo img {
@@ -113,4 +113,38 @@
     to {
         opacity: 1;
     }
+}
+
+nav a,
+nav img {
+    padding: .2rem;
+    border-radius: 3px;
+}
+
+nav a:hover,
+nav img:hover {
+    box-shadow: 0 0 0 2px #131313;
+    opacity: .9;
+}
+
+
+@media (max-width: 1023px) {
+    .home {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 3rem;
+    }
+
+    .heart-logo {
+        width: fit-content;
+    }
+
+    .heart-logo img {
+        min-width: 300px;
+    }
+
+    .heart-logo article {
+        transform: translate(-50%, -50%);
+    }
+
 }

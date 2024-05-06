@@ -3,16 +3,21 @@
 }
 
 .contact {
+    padding-top: 10rem;
     padding-inline: 3rem;
     display: flex;
     flex-direction: column;
+    letter-spacing: 3px;
 }
 
 .contact > section {
     color: white;
     background-color: var(--color-brown);
     border-radius: 10px;
+
     display: flex;
+    justify-content: center;
+    column-gap: 3rem;
     margin-inline: auto;
     padding: 3rem;
 }
@@ -57,12 +62,75 @@
 .contact form {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .contact form input,
 .contact form textarea {
     color: white;
     background-color: transparent;
+    border-bottom: 1px solid white;
+    padding: 1rem 10px;
 }
 
+.contact form input::placeholder,
+.contact form textarea::placeholder {
+    color: white;
+    text-transform: capitalize;
+}
 
+.contact button[type="submit"] {
+    color: white;
+    background-color: #10b981;
+    align-self: end;
+    padding: 1vw 2vw;
+    border-radius: 6px;
+    text-transform: capitalize;
+
+    width: fit-content;
+    margin-top: 1rem;
+}
+
+.contact button[type="submit"]:hover {
+    opacity: .8;
+}
+
+@media (max-width: 1023px){
+    .contact {
+        padding: 0;
+    }
+
+    .contact h2 {
+        padding: 2rem 2rem 1rem;
+    }
+
+    .contact > section {
+        flex-direction: column;
+        margin-inline: 0;
+        border-radius: 0;
+        padding: 3rem 1rem;
+    }
+
+    .contact figure {
+        align-items: center;
+        row-gap: 4rem;
+    }
+
+    .contact figure > div {
+        translate: -30%;
+    }
+
+    .contact figcaption {
+        row-gap: .8rem;
+        margin-bottom: 2rem;
+    }
+
+    .contact form {
+        row-gap: 5rem;
+    }
+
+    .contact button[type="submit"] {
+        padding: 1rem 2rem;
+        margin-top: 0rem;
+    }
+}
