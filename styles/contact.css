@@ -96,11 +96,42 @@
 }
 
 @media (max-width: 1023px){
-    .contact > section {
-        flex-direction: column;
+    .contact {
+        padding: 0;
     }
 
-    .contact span {
-        /* text-align: start; */
+    .contact h2 {
+        padding: 2rem 2rem 1rem;
     }
+
+    .contact > section {
+        flex-direction: column;
+        margin-inline: 0;
+        border-radius: 0;
+        padding: 3rem 1rem;
+    }
+
+    .contact figure {
+        align-items: center;
+        row-gap: 4rem;
+    }
+
+    .contact figure > div {
+        translate: -30%;
+    }
+
+    .contact figcaption {
+        row-gap: .8rem;
+        margin-bottom: 2rem;
+    }
+
+    .contact form {
+        row-gap: 5rem;
+    }
+
+    .contact button[type="submit"] {
+        padding: 1rem 2rem;
+        margin-top: 0rem;
+    }
+
 }

@@ -8,6 +8,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    row-gap: 1rem;
 }
 
 .about input {
@@ -100,6 +101,18 @@
 }
 
 @media (max-width: 1023px) {
+    .about {
+        padding-inline: 0rem;   
+    }
+
+    .about > section:nth-child(2) {
+        padding-inline: 3rem;   
+    }
+
+    .about h2 {
+        padding: 2rem 2rem 1rem;
+    }
+
     .about label {
         font-size: 14px;
         width: 100%;
@@ -108,7 +121,7 @@
     }
 
     .about li > * {
-        padding: 2rem;
+        padding: 1rem;
     }
 
     .about li {

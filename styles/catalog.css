@@ -90,15 +90,25 @@
 }
 
 @media (max-width: 1023px){
+    .catalog {
+        padding: 0;
+    }
+
     #catalog > section:nth-child(2){
         width: 80vw;
         overflow-x: auto;
-        padding: 1rem;
-        padding: 15px;
+    }
+
+    .catalog h2 {
+        padding: 2rem 2rem 1rem;
     }
 
     .catalog .card {
         width: 200px;
+    }
+
+    .products > section:nth-child(2) {
+        padding: 1rem;
     }
 
     .pets > section:nth-child(2) {
